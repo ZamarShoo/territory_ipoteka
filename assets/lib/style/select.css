@@ -1,0 +1,153 @@
+.select {
+    position: relative;
+    width: 100%;
+}
+  
+.select__toggle {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #102525;
+    border-radius: 6px;
+    padding: 20px;
+    outline: none;
+    border: none;
+}
+  
+.select__toggle:focus {
+    outline: none;
+}
+
+.select__toggle::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: 16px;
+}
+
+.select__toggle[value="phone"]::before {
+  background-image: url(../../images/popup/phone_gold.svg);
+}
+
+.select__toggle[value="whatsapp"]::before {
+  background-image: url(../../images/popup/whatsapp_gold.png);
+}
+
+.select__toggle[value="viber"]::before {
+  background-image: url(../../images/popup/viber_gold.png);
+}
+
+.select__toggle[value="email"]::before {
+  background-image: url(../../images/popup/email_gold.png);
+}
+  
+.select__dropdown {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    border-radius: 6px;
+    z-index: 2;
+    background-color: #102525;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0 20px;
+}
+  
+.select_show .select__dropdown {
+    display: block;
+}
+  
+.select_show .select__backdrop {
+    display: block;
+}
+  
+.select__options {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.select__option {
+    border-bottom: 1px solid #173535;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.select__option i {
+    position: relative;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+.select__option i::before, .select__option i::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-size: 16px;
+}
+
+.select__option:nth-child(1) i::before {
+    background-image: url(../../images/popup/phone_light.svg);
+}
+
+.select__option:nth-child(1) i::after {
+  display: none;
+  background-image: url(../../images/popup/phone_gold.svg);
+}
+
+.select__option:nth-child(2) i::before {
+  background-image: url(../../images/popup/whatsapp_light.png);
+}
+
+.select__option:nth-child(2) i::after {
+  display: none;
+  background-image: url(../../images/popup/whatsapp_gold.png);
+}
+
+.select__option:nth-child(3) i::before {
+  background-image: url(../../images/popup/viber_light.png);
+}
+
+.select__option:nth-child(3) i::after {
+  display: none;
+  background-image: url(../../images/popup/viber_gold.png);
+}
+
+.select__option:nth-child(4) i::before {
+  background-image: url(../../images/popup/email_light.png);
+}
+
+.select__option:nth-child(4) i::after {
+  display: none;
+  background-image: url(../../images/popup/email_gold.png);
+}
+  
+.select__option_selected i::before {
+    display: none;
+}
+
+.select__option_selected i::after {
+  display: block !important;
+}

@@ -437,7 +437,7 @@ aside {
 
 aside::-webkit-scrollbar {
     width: 0;
-  }
+}
 
 .sidebar-header {
     display: flex;
@@ -590,6 +590,344 @@ nav {
         }
     }
       
+}
+
+.modal_outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 11;
+}
+
+.open_modal {cursor: pointer;}
+
+.modal {
+    position: relative;
+    top: 90px;
+    left: 0;
+    width: 520px;
+    height: 806px;
+    background: #1C4342;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    opacity: 0;
+    padding: 70px 60px;
+    text-align: center;
+
+    transition: .5s;
+
+    h2 {
+        color: #FFFFFF;
+    }
+
+    p {
+        color: #FFFFFF;
+        opacity: 0.6;
+        margin: 18px 0 40px;
+    }
+
+    .input_form {
+        position: relative;
+        height: 62px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .label_changer {
+        label {display: none;}
+        label.active {display: block;}
+    }
+
+    .close_popup {
+        position: absolute;
+        display: block;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        background-image: url(../images/popup/close_popup.svg);
+        cursor: pointer;
+    }
+
+}
+
+.modal-active {
+    opacity: 1;
+    top: 0;
+}
+
+@media screen and (max-height: 850px) {
+    .modal {
+        height: 100vh;
+    }
+}
+
+input[type="text"], input[type="email"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .5s;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    padding: 22px 30px;
+    background: #102525;
+    border-radius: 6px;
+    outline: none;
+
+    border: 2px solid #102525;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+textarea {
+    height: 120px;
+    width: 100%;
+    transition: .5s;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    padding: 22px 30px;
+    background: #102525;
+    border-radius: 6px;
+    outline: none;
+
+    border: 2px solid #102525;
+    resize: none;
+}
+
+form {
+    text-align: left;
+
+    h3 {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+        margin: 40px 0 16px;
+    }
+
+    .policy_wrapper {
+        margin: 20px 0;
+    }
+
+    .policy_wrapper label {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+
+        input[type="checkbox"] {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        input[type="checkbox"]+i::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 14px;
+            height: 14px;
+            background: #102525;
+            border-radius: 50%;
+
+            transition: .3s;
+        }
+
+        input[type="checkbox"]:checked+i::before {
+            background: #E3AC75;
+        }
+
+        p, a {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 140%;
+            color: #FFFFFF;
+            opacity: 0.6;
+            margin: 0;
+        }
+
+        a {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        i {
+            position: relative;
+            width: 20px;
+            min-width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #102525;
+            margin-right: 10px;
+        }
+    }
+}
+
+input[type="submit"] {
+    display: inline-block;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: #E3AC75;
+    border-radius: 6px;
+    padding: 24px;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+input[type="submit"]:hover {
+    background: #CE9C6A;
+}
+
+input[type="submit"]:disabled {
+    cursor: not-allowed;
+    background: rgba($color: #E3AC75, $alpha: .6);
+    opacity: 0.6;
+}
+
+.input_changer__mobile {
+    display: none;
+}
+
+.input_changer {
+    display: flex;
+    justify-content: space-between;
+
+    li {
+        width: 94px;
+        height: 58px;
+        background: #102525;
+        border: 2px solid #102525;
+        box-sizing: border-box;
+        border-radius: 6px;
+
+        padding: 12px 0;
+        text-align: center;
+
+        cursor: pointer;
+        transition: .3s;
+
+        i {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            position: relative;
+        }
+
+        i::before, i::after {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-size: 16px;
+            transition: .3s;
+        }
+
+        &:nth-child(1) i::before {
+            background-image: url(../images/popup/phone_light.svg);
+        }
+
+        &:nth-child(1) i::after {
+            display: none;
+            background-image: url(../images/popup/phone_gold.svg);
+        }
+
+        &:nth-child(2) i::before {
+            background-image: url(../images/popup/whatsapp_light.png);
+        }
+
+        &:nth-child(2) i::after {
+            display: none;
+            background-image: url(../images/popup/whatsapp_gold.png);
+        }
+
+        &:nth-child(3) i::before {
+            background-image: url(../images/popup/viber_light.png);
+        }
+
+        &:nth-child(3) i::after {
+            display: none;
+            background-image: url(../images/popup/viber_gold.png);
+        }
+
+        &:nth-child(4) i::before {
+            background-image: url(../images/popup/email_light.png);
+        }
+
+        &:nth-child(4) i::after {
+            display: none;
+            background-image: url(../images/popup/email_gold.png);
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 100%;
+            color: #FFFFFF;
+            margin: 6px 0 0;
+
+            transition: .3s;
+        }
+    }
+
+    li.active {
+        border: 2px solid #E3AC75;
+
+        p {
+            color: #E3AC75;
+        }
+
+        i::before {
+            display: none;
+        }
+
+        i::after {
+            display: block;
+        }
+    }
+}
+
+.modal::-webkit-scrollbar {
+    width: 0;
 }
 
 //hd 1200-1440 -- 1160
@@ -763,5 +1101,20 @@ nav {
     }
     a.btn {
         width: 100%;
+    }
+    .modal_outer {
+        display: block;
+    }
+    .modal {
+        width: 100%;
+        height: 100vh;
+        padding: 80px 30px;
+        border-radius: 0;
+    }
+    .input_changer {
+        display: none;
+    }
+    .input_changer__mobile {
+        display: block;
     }
 }
