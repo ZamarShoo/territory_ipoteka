@@ -77,3 +77,25 @@ $('.select__option').click(function() {
     parent.removeClass('active')
     parent[index].className = "active"
 })
+
+
+const swiper = new Swiper('.garanty-body', {
+    // Optional parameters
+    slidesPerView: 3,
+    spaceBetween: 30,
+    loop: false,
+    breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
+        1200: {
+            slidesPerView: 3
+        }
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.garanty_navigate__next',
+      prevEl: '.garanty_navigate__prev',
+    },
+  });
+  
