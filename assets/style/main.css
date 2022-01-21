@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1676,6 +1677,42 @@ input[type="submit"]:disabled {
   color: #333333;
 }
 
+.sertificate-wrapper {
+  margin-top: 100pх !important;
+}
+
+.sertificate-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 75px;
+}
+
+.srtificate-slide {
+  background: #F7FCFC;
+  border: 1px solid #DFDFDF;
+  border-radius: 6px;
+  padding: 4px;
+  width: 190px;
+  height: auto;
+}
+
+.srtificate-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.sertificate_navigate__mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1400px) {
   .garanty-body .garanty_body__article {
     padding: 30px 20px;
@@ -1732,6 +1769,9 @@ input[type="submit"]:disabled {
   }
   .about-footer li i {
     margin-right: 20px;
+  }
+  .srtificate-slide {
+    width: 160px;
   }
 }
 
@@ -1870,6 +1910,21 @@ input[type="submit"]:disabled {
   .about-footer li {
     padding: 15px 10px;
   }
+  .srtificate-slide {
+    width: 140px;
+  }
+  .sertificate_navigate__desktop {
+    display: none;
+  }
+  .sertificate_navigate__mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 40px;
+  }
+  .sertificate-head {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -1977,6 +2032,9 @@ input[type="submit"]:disabled {
   }
   .about-footer li p {
     font-size: 14px;
+  }
+  .sertificate-head {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=main.css.map */

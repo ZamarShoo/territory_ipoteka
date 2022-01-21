@@ -121,3 +121,29 @@ const swiper_utp = new Swiper('.swiper-utp', {
       prevEl: '.utp_navigate__prev',
     },
 });
+
+const swiper_sert = new Swiper('.sertificate-body', {
+    // Optional parameters
+    slidesPerView: 6,
+    spaceBetween: 30,
+    loop: false,
+    breakpoints: {
+        0: {
+            spaceBetween: 20,
+            slidesPerView: 2
+        },
+        640: {
+            spaceBetween: 20,
+            slidesPerView: 4
+        },
+        1200: {
+            slidesPerView: 6,
+            spaceBetween: 30
+        }
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.sertificate_navigate__next',
+      prevEl: '.sertificate_navigate__prev',
+    },
+});
