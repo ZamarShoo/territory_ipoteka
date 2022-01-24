@@ -47,17 +47,85 @@ $('.close_popup').click(function() {
     });
 })
 
+$('.fixed-left').click(function() {
+    window.scrollTo(0, 0);
+})
+
 $(window).scroll(function(){
     $('.header').toggleClass('header-fixed', $(this).scrollTop() > 1000);
+    $('.fixed-left').toggleClass('fixed-left-fixed', $(this).scrollTop() > 3000);
 });
 
 const select1 = new CustomSelect('.input_changer__mobile');
 
-$('.policy_wrapper').click(function() {
-    if ($('.policy').is(':checked')){
-        $(".submit_form").attr("disabled", false);
+$('.policy').click(function() {
+    let input = $(this)
+    let submit = input.parent().parent().parent().children(".submit_form")
+    if (input.is(':checked')){
+        submit.attr("disabled", false);
     } else {
-        $(".submit_form").attr("disabled", true);
+        submit.attr("disabled", true);
+    }
+})
+
+
+$(document).ready(function() {
+    $('#about').children('.about__inner').children().css("display", "none")
+    $('#about').children('.about__inner').children(":first").css("display", "inline-block")
+
+    $('.partners').children().each((index, elem) => {
+        if(index >= 8) {
+            elem.className = "hide"
+        }
+    })
+
+    setTimeout(function() {
+        $('h1').css('opacity', '1')
+    }, 600)
+
+    setTimeout(function() {
+        $('.cookie1').addClass('cookie_visible')
+    }, 3000)
+
+    setTimeout(function() {
+        $('.cookie2').addClass('cookie_visible')
+    }, 3600)
+})
+
+$(".about_btn").click(function(e) {
+    e.preventDefault()
+    let parent = $(this).parent()
+    if(!parent.hasClass('about_opened')) {
+        parent.children('.about__inner').children().css("display", "inline-block");
+        $(this).html('закрыть <i></i>')
+        parent.addClass('about_opened')
+    } else {
+        parent.removeClass('about_opened')
+        $('#about').children('.about__inner').children().css("display", "none")
+        $('#about').children('.about__inner').children(":first").css("display", "inline-block")
+        $(this).html('подробнее о компании  <i></i>')
+    }
+})
+
+$('.btn_partners').click(function(e) {
+    e.preventDefault()
+    if($('.partners').hasClass('partners_active')) {
+
+        $('.partners').children().each((index, elem) => {
+            if(index >= 8) {
+                elem.className = "hide"
+            }
+        })
+        $(this).html('показать все 24 партнера')
+        $('.partners').removeClass('partners_active')
+
+    } else {
+        $('.partners').children().each((index, elem) => {
+            elem.className = ""
+        })
+        
+        $(this).html('закрыть')
+        $('.partners').addClass('partners_active')
     }
 })
 
@@ -147,3 +215,35 @@ const swiper_sert = new Swiper('.sertificate-body', {
       prevEl: '.sertificate_navigate__prev',
     },
 });
+
+
+
+$('#form, #form_1').submit(function(e) {
+    e.preventDefault();
+})
+
+
+$('.close_thanks, .btn_thanks').click(function(e) {
+    e.preventDefault();
+    $('.modal-thanks_outer').css('display', 'none')
+    $('html, body').css({
+        overflow: 'auto'
+    });
+    $('.blackout_layer').hide()
+})
+
+$('.bubble').click(function(e) {
+    e.preventDefault()
+    $('a.mail').toggleClass('active')
+    $('a.phone').toggleClass('active')
+    $(this).toggleClass('active')
+})
+
+$('.btn_cookie').click(function(e) {
+    e.preventDefault()
+    let parent = $(this).parent()
+    parent.addClass('cookie_hidden')
+    setTimeout(function() {
+        parent.addClass('cookie_hidden__disabled')
+    }, 600)
+})
