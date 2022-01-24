@@ -1,5 +1,37 @@
 @import './../lib/style/normilize.scss';
 
+
+.preloader {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background: #1C4342;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    margin: 20px auto 0;
+    width: 70px;
+    height: 8px;
+    position: relative;
+
+    .dot {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #E3AC75;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        opacity: 0;
+
+    }
+}
+
 //full hd 1441-более  -- 1290
 
 
@@ -1384,6 +1416,10 @@ a.map {
     z-index: 1;
 }
 
+a.map:hover {
+    color: white;
+}
+
 .map-left {
     position: relative;
     z-index: 3;
@@ -2504,3 +2540,4 @@ footer {
         }
     }
 }
+

@@ -366,6 +366,41 @@ template {
 [hidden] {
   display: none;
 }
+.preloader {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  background: #1C4342;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader {
+  margin: 20px auto 0;
+  width: 70px;
+  height: 8px;
+  position: relative;
+}
+
+.loader .dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #E3AC75;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0;
+}
+
 .header {
   z-index: 3;
   position: absolute;
@@ -1884,6 +1919,10 @@ a.map {
   padding: 25px 90px;
   color: #E3AC75;
   z-index: 1;
+}
+
+a.map:hover {
+  color: white;
 }
 
 .map-left {
