@@ -274,3 +274,31 @@ $('.close_popup__event').click(function() {
         $('.event_popup__outer').hide()
     }, 400)
 })
+
+$('a.map').click(function(e) {
+    e.preventDefault()
+
+    $('.map_popup__outer').css('display', 'flex')
+    $('.blackout_layer').show()
+
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+
+    setTimeout(function() {
+        $('.map_popup').css('top', '0')
+        $('.map_popup').css('opacity', '1')
+    }, 200)
+})
+
+$('.close_map').click(function() {
+    $('html, body').css({
+        overflow: 'auto'
+    });
+    $('.map_popup').css('top', '40px')
+    $('.map_popup').css('opacity', '0')
+    setTimeout(function() {
+        $('.blackout_layer').hide()
+        $('.map_popup__outer').hide()
+    }, 400)
+})
