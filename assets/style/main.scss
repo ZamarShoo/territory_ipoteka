@@ -1923,7 +1923,98 @@ footer {
     }
 }
 
+.event_popup__outer {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
 
+.event_popup {
+    top: 40px;
+    width: 630px;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 6px;
+    position: relative;
+    background-image: url(../images/popup/event.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: .5s;
+
+    padding: 88px 60px;
+
+    i.close_popup__event {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        right: 36px;
+        top: 36px;
+        position: absolute;
+        z-index: 1;
+        background-image: url(../images/popup/close_popup.svg);
+        cursor: pointer;
+    }
+}
+
+.event_popup1, .event_popup2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.event_popup1 {
+    background: linear-gradient(74.58deg, #1C4342 50.39%, rgba(28, 67, 66, 0) 100%);
+}
+
+.event_popup2 {
+    background: #1C4342;
+    opacity: 0.7;
+}
+
+.event__inner {
+    position: relative;
+    z-index: 2;
+    
+    h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 140%;
+        color: #FFFFFF;
+    }
+
+    p {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        max-width: 340px;
+
+        a {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 140%;
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+    }
+
+    a.btn {
+        margin-top: 60px;
+        padding: 24px 34px;
+    }
+}
 
 //hd 1200-1440 -- 1160
 
@@ -2202,6 +2293,20 @@ footer {
 @media screen and (max-width: 750px) {
     section {
         padding: 0 30px;
+    }
+    .event_popup {
+        width: 100%;
+        height: 100%;
+        padding: 108px 20px 40px;
+        text-align: center;
+
+        p {
+            margin: 20px auto 0;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
     }
 }
    

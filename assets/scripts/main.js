@@ -90,6 +90,21 @@ $(document).ready(function() {
     setTimeout(function() {
         $('.cookie2').addClass('cookie_visible')
     }, 3600)
+
+    setTimeout(function() {
+        $('.event_popup__outer').css('display', 'flex')
+        $('.blackout_layer').show()
+
+        $('html, body').css({
+            overflow: 'hidden'
+        });
+    }, 20000)
+
+    setTimeout(function() {
+        $('.event_popup').css('top', '0')
+        $('.event_popup').css('opacity', '1')
+    }, 20050)
+
 })
 
 $(".about_btn").click(function(e) {
@@ -246,4 +261,16 @@ $('.btn_cookie').click(function(e) {
     setTimeout(function() {
         parent.addClass('cookie_hidden__disabled')
     }, 600)
+})
+
+$('.close_popup__event').click(function() {
+    $('html, body').css({
+        overflow: 'auto'
+    });
+    $('.event_popup').css('top', '40px')
+    $('.event_popup').css('opacity', '0')
+    setTimeout(function() {
+        $('.blackout_layer').hide()
+        $('.event_popup__outer').hide()
+    }, 400)
 })
