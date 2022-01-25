@@ -70,8 +70,8 @@ $('.policy').click(function() {
 
 
 $(document).ready(function() {
-    $('#about').children('.about__inner').children().css("display", "none")
-    $('#about').children('.about__inner').children(":first").css("display", "inline-block")
+    $('#about_inner').children('.about__inner').children().css("display", "none")
+    $('#about_inner').children('.about__inner').children(":first").css("display", "inline-block")
 
     $('.partners').children().each((index, elem) => {
         if(index >= 8) {
@@ -116,9 +116,12 @@ $(".about_btn").click(function(e) {
         parent.addClass('about_opened')
     } else {
         parent.removeClass('about_opened')
-        $('#about').children('.about__inner').children().css("display", "none")
-        $('#about').children('.about__inner').children(":first").css("display", "inline-block")
+        $('#about_inner').children('.about__inner').children().css("display", "none")
+        $('#about_inner').children('.about__inner').children(":first").css("display", "inline-block")
         $(this).html('подробнее о компании  <i></i>')
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top
+        }, 500); 
     }
 })
 
@@ -133,6 +136,9 @@ $('.btn_partners').click(function(e) {
         })
         $(this).html('показать все 24 партнера')
         $('.partners').removeClass('partners_active')
+        $('html, body').animate({
+            scrollTop: $("#partners").offset().top
+        }, 500); 
 
     } else {
         $('.partners').children().each((index, elem) => {
