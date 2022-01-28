@@ -3131,6 +3131,10 @@ footer .modal .close_popup {
   background: #112228;
 }
 
+.businnes_mode .preloader {
+  background: #112228;
+}
+
 .businnes_mode a.btn {
   border-radius: 0;
 }
