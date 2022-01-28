@@ -4877,5 +4877,8 @@ ul.schema li:last-child > div i:nth-child(2) {
   .businnes_mode .modal_outer .modal h2 {
     font-size: 32px;
   }
+  .businnes_mode a.btn {
+    padding: 24px 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
