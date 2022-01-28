@@ -1,0 +1,1 @@
+const select1 = new CustomSelect('.input_changer__mobile');
