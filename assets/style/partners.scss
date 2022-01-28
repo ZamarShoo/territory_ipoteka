@@ -33,7 +33,7 @@
 
 
 .header {
-    z-index: 30;
+    z-index: 32;
     position: absolute;
     width: 100%;
     padding: 30px 0;
@@ -745,7 +745,8 @@ nav {
         height: 50px;
         border-radius: 50%;
         cursor: pointer;
-
+        appearance: none;
+        -webkit-appearance: none;
         transition: .3s;
     }
 

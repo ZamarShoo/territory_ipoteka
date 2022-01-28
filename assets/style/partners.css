@@ -35,7 +35,7 @@
 }
 
 .header {
-  z-index: 30;
+  z-index: 32;
   position: absolute;
   width: 100%;
   padding: 30px 0;
@@ -810,6 +810,9 @@ nav a.btn {
   height: 50px;
   border-radius: 50%;
   cursor: pointer;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
