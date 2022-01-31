@@ -641,6 +641,8 @@
 .services_business {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
     column-gap: 30px;
     row-gap: 40px;
     margin-top: 70px;
@@ -840,6 +842,8 @@
 
 .houses_business__body ul {
     display: flex;
+    grid-row-gap: normal;
+    grid-column-gap: normal;
     column-gap: normal;
     row-gap: normal;
     margin-top: 0px;
@@ -866,6 +870,8 @@
 ul.schema {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
     column-gap: 30px;
     row-gap: 40px;
     margin-top: 70px;
@@ -1362,6 +1368,7 @@ ul.schema {
     }
     .services_business {
         grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
         column-gap: 20px;
     }
     .services_business li {
