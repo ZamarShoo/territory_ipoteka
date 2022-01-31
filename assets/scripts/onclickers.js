@@ -20,7 +20,8 @@ $('.close-aside').click(function(event) {
     });
 })
 
-$('.open_modal').click(function() {
+$('.open_modal').click(function(e) {
+    e.preventDefault()
     $('.blackout_layer').show()
     $('aside').removeClass('aside-active')
     $('nav').removeClass('nav-active')
