@@ -4458,7 +4458,7 @@ ul.schema li:last-child > div i:nth-child(2) {
           flex-direction: column;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   min-height: 330px;
   position: relative;
   z-index: 4;
@@ -4542,6 +4542,7 @@ ul.schema li:last-child > div i:nth-child(2) {
   }
   .utp_second_business_ul li {
     width: 300px;
+    margin-right: 20px;
   }
   .utp_second_business_ul li i {
     background-size: 60px;
