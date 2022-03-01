@@ -187,7 +187,7 @@ $('.select__option').click(function() {
     parent.removeClass('active')
     parent[index].className = "active"
 })
-<<<<<<< HEAD
+
 
 
 $('.service_popup__close').click(function() {
@@ -229,5 +229,4 @@ $('a.all').click(function(e) {
 $('.faq_elem__head').click(function() {
     $(this).parent().toggleClass('active')
 })
-=======
->>>>>>> 070aba7734d76580a3db8dac4981508919b1f0a2
+
