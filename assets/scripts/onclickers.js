@@ -186,3 +186,44 @@ $('.select__option').click(function() {
     parent.removeClass('active')
     parent[index].className = "active"
 })
+
+
+$('.service_popup__close').click(function() {
+    $(this).parent().parent().parent().parent().hide()
+    $('.blackout_layer').hide()
+
+    $('html, body').css({
+        overflow: 'auto'
+    });
+})
+
+function openServicePopup(id) {
+    $('.blackout_layer').show()
+
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+
+    $(`#service_popup_${id}`).css('display', 'flex')
+}
+
+function openCasePopup(id) {
+    $('.blackout_layer').show()
+
+    $('html, body').css({
+        overflow: 'hidden'
+    });
+
+    $(`#case_popup_${id}`).css('display', 'flex')
+}
+
+$('a.all').click(function(e) {
+    e.preventDefault()
+
+    $(this).parent().children('ul').children().removeClass('hide')
+    $(this).hide()
+})
+
+$('.faq_elem__head').click(function() {
+    $(this).parent().toggleClass('active')
+})

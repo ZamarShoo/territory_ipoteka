@@ -194,3 +194,85 @@ if ($('.history_body')) {
         },
     });
 }
+
+if ($('.programs-wrapper__body')) {
+    const swiper_programs_wrapper__body = new Swiper('.programs-wrapper__body', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            1200: {
+                slidesPerView: 2
+            }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.programs_navigate__next',
+          prevEl: '.programs_navigate__prev',
+        },
+    });
+}
+
+if ($('.case_main-wrapper__body')) {
+    const swiper_programs_wrapper__body = new Swiper('.case_main-wrapper__body', {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            1200: {
+                slidesPerView: 2
+            }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.case_main_navigate__next',
+          prevEl: '.case_main_navigate__prev',
+        },
+    });
+}
+
+if ($('.first_slide__swiper')) {
+    const first_slide__swiper = new Swiper('.first_slide__swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoplay: {
+            delay: 6000,
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.first_slide__swiper_navigate__next',
+          prevEl: '.first_slide__swiper_navigate__prev',
+        },
+    });
+}
+
+if ($('.command_body')) {
+    const command_body = new Swiper('.command_body', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: false,
+        breakpoints: {
+            0: {
+                slidesPerView: 1
+            },
+            640: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 4
+            }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.command_navigate__next',
+          prevEl: '.command_navigate__prev',
+        },
+    });
+}

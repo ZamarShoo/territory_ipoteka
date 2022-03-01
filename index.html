@@ -10,16 +10,2110 @@
           rel="stylesheet"
           href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"> 
     <!--font-family: 'Inter', sans-serif;-->
+    <link rel="stylesheet" href="./assets/lib/style/fm.revealator.jquery.css">
     <link rel="stylesheet" href="./assets/style/main.css">
 
     <title>Главная страница</title>
 </head>
 <body>
+
+    <div class="preloader">
+        <div class="">
+            <img src="./assets/images/preloader.svg" alt="">
+            <div class="loader">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <section>
+            <header>
+                <div class="header-left">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" alt="">
+                    </a>
+                    <div class="vertical-line"></div>
+                    <div class="header-left__selected">
+                        <p>партнерам</p>
+                        <div class="more_header">
+                            <a href="">частным клиентам</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right__link">
+                        <a href="mailto:info@ti.com" class="mail">info@ti.com</a>
+                        <a href="tel:+7 (480)123-45-67" class="tel">+7 (480)123-45-67</a>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <a class="header_btn open_modal">связаться</a>
+                    <div class="vertical-line"></div>
+                    <div class="burger">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </header>
+        </section>
+    </div>
+
+    <main>
+        <div class="swiper first_slide__swiper">
+            <div class="swiper-wrapper">
+                <div class="first-slide swiper-slide">
+                    <div class="first-slide_img-wrapper">
+                        <div class="dark-slide"></div>
+                        <img src="./assets/images/delete/partners_first-slide.jpg" alt="">
+                    </div>
+                    <section>
+                        <div>
+                            <h1 class="">Помощь в получении ипотеки</h1>
+                            <ul>
+                                <li>
+                                    <h3><span>на</span> 1,5%-3%</h3>
+                                    <p>ставка ниже конкурентов за счет преференций компании</p>
+                                </li>
+                                <li>
+                                    <h3>9 <span>из</span> 10</h3>
+                                    <p>клиентов получают одобрение на ипотеку</p>
+                                </li>
+                                <li>
+                                    <h3>2-10 <span>дней</span></h3>
+                                    <p>до положительного
+                                        результата</p>
+                                </li>
+                            </ul>
+                            <a href="" class="btn open_modal">получить рассчет</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="first-slide swiper-slide">
+                    <div class="first-slide_img-wrapper">
+                        <div class="dark-slide"></div>
+                        <img src="./assets/images/delete/partners_first-slide.jpg" alt="">
+                    </div>
+                    <section>
+                        <div>
+                            <h2 class="likeH">Помощь в получении ипотеки 1</h2>
+                            <ul>
+                                <li>
+                                    <h3><span>на</span> 1,5%-3%</h3>
+                                    <p>ставка ниже конкурентов за счет преференций компании</p>
+                                </li>
+                                <li>
+                                    <h3>9 <span>из</span> 10</h3>
+                                    <p>клиентов получают одобрение на ипотеку</p>
+                                </li>
+                                <li>
+                                    <h3>2-10 <span>дней</span></h3>
+                                    <p>до положительного
+                                        результата</p>
+                                </li>
+                            </ul>
+                            <a href="" class="btn open_modal">получить рассчет</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <section class="navigate_fist_slide__wrapper">
+                <div class="navigate navigate_first_slide__swiper">
+                    <i class="first_slide__swiper_navigate__prev"></i>
+                    <i class="first_slide__swiper_navigate__next"></i>
+                </div>
+            </section>
+        </div>   
+
+        <div class="section-wrapper">
+            <section>
+                <h2>Мы поможем вам</h2>
+                <ul class="helps-wrapper">
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h1.svg);"></i>
+                        <h3>У Вас плохая кредитная история</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h2.svg);"></i>
+                        <h3>Низкий официальный доход</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h3.svg);"></i>
+                        <h3>Вы собственник бизнеса</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h4.svg);"></i>
+                        <h3>Нет первоначального взноса</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h5.svg);"></i>
+                        <h3>Вам уже отказали несколько банков</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h6.svg);"></i>
+                        <h3>Вы не являтесь резидентом РФ</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h7.svg);"></i>
+                        <h3>У Вас уже есть несколько кредитов</h3>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/helps_icon/h8.svg);"></i>
+                        <h3>Банки не выдают нужную Вам сумму</h3>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <div class="programs-wrapper__header revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                    <h2>Ипотечные программы</h2>
+                    <div class="navigate navigate_programs navigate_programs__desktop">
+                        <i class="programs_navigate__prev"></i>
+                        <i class="programs_navigate__next"></i>
+                    </div>
+                </div>
+                <div class="programs-wrapper__body swiper revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/1.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Ипотека с материнским капиталом </h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/2.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Семейная ипотека </h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/3.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Льготная ипотечная программа</h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/4.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Ипотечная программа для военнослужащих </h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/5.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Государственная ипотечная программа «Молодая семья»</h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/6.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Программа переселения «Сотрудничество»</h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="swiper-slide" style="background-image: url(./assets/images/delete/programm/7.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Одобрение ипотеки на выкуп доли в квартире</h3>
+                                <ul>
+                                    <li>
+                                        <h3><span>от</span> 7,1%</h3>
+                                        <p>ставка по ипотеке</p>
+                                    </li>
+                                    <li>
+                                        <h3>1-30 <span>лет</span></h3>
+                                        <p>срок кредитования</p>
+                                    </li>
+                                    <li>
+                                        <h3><span>от</span>12 <span>млн ₽</span></h3>
+                                        <p>размер кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navigate navigate_programs navigate_programs__mobile">
+                    <i class="programs_navigate__prev"></i>
+                    <i class="programs_navigate__next"></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <div class="what_we_do">
+                <div class="dark_bg1"></div>
+                <div class="dark_bg2"></div>
+                <section>
+                    <div>
+                        <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Что мы сделаем для Вас</h2>
+                        <ul class="what_we_do__ul">
+                            <li class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                                <i style="background-image: url(./assets/images/utp21.svg);"></i>
+                                <p>Проанализируем ситуцию 
+                                    и подготовим все документы для банков</p>
+                            </li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                                <i style="background-image: url(./assets/images/utp22.svg);"></i>
+                                <p>Мы полностью возьмем 
+                                    на себя все взаимодействие 
+                                    с банками</p>
+                            </li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay7 revealator-once">
+                                <i style="background-image: url(./assets/images/utp23.svg);"></i>
+                                <p>Сэкономим Ваш бюджет 
+                                    за счет преференций</p>
+                            </li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay9 revealator-once">
+                                <i style="background-image: url(./assets/images/utp24.svg);"></i>
+                                <p>Предложим несколько вариантов кредитования</p>
+                            </li>
+                        </ul>
+                        <a href="" class="btn btn_we_do">получить консультацию</a>
+                    </div>
+                    <div class="modal revealator-slideup revealator-duration5 revealator-delay12 revealator-once">
+                        <h2>Оставьте заявку</h2>
+                        <p>на бесплатную консультацию</p>
+                        <form id="form">
+                            <div class="input_form">
+                                <label>
+                                    <input type="text" name="" id="" placeholder="ваше имя">
+                                </label>
+                            </div>
+                            <div class="input_outer">
+                                <div class="input_form label_changer">
+                                    <label data-value="phone" class="active">
+                                        <input type="text" name="phone_label" id="" placeholder="ваш номер телефона">
+                                    </label>
+                                    <label data-value="whatsapp">
+                                        <input type="text" name="whatsapp_label" id="" placeholder="ваш номер whatsapp">
+                                    </label>
+                                    <label data-value="viber">
+                                        <input type="text" name="viber_label" id="" placeholder="ваш номер viber">
+                                    </label>
+                                    <label data-value="email">
+                                        <input type="email" name="email_label" id="" placeholder="ваш email">
+                                    </label>
+                                </div>
+                            </div>
+                            <h3>где с вами удобнее связаться?</h3>
+                            <ul class="input_changer">
+                                <li data-value="mobile" data-index="0" class="input_changer__list active">
+                                    <i class="mobile"></i>
+                                    <p>Мобильный</p>
+                                </li>
+                                <li data-value="whatsapp" data-index="1" class="input_changer__list">
+                                    <i class="whatsapp"></i>
+                                    <p>WhatsApp</p>
+                                </li>
+                                <li data-value="viber" data-index="2" class="input_changer__list">
+                                    <i class="viber"></i>
+                                    <p>Viber</p>
+                                </li>
+                                <li data-value="email" data-index="3" class="input_changer__list">
+                                    <i class="email"></i>
+                                    <p>Email</p>
+                                </li>
+                            </ul>
+                            <div class="policy_wrapper">
+                                <label>
+                                    <input type="checkbox" checked name="policy" class="policy">
+                                    <i></i>
+                                    <p>Я согласен с <a href="">политикой конфиденциальности</a></p>
+                                </label>
+                            </div>
+                            <input type="submit" class="submit_form" value="оставить заявку">
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="section-wrapper grid_list_main">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Услуги компании</h2>
+                <ul class="grid-list revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                    <li onclick="openServicePopup(0)" class="revealator-slideup revealator-duration5 revealator-once">
+                        <article>
+                            <img src="./assets/images/delete/sotr1.jpg" alt="">
+                            <div class="article-info">
+                                <h3>Сотрудничество с банками</h3>
+                                <p class="desktop">Нам интересно любое банковское сотрудничество</p>
+                                <p class="mobile">Нам интересно любое банковское сотрудничество</p>
+                                <div class="article-link">
+                                    <p>подробнее</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li onclick="openServicePopup(1)" class="revealator-slideup revealator-duration5 revealator-once">
+                        <article>
+                            <img src="./assets/images/delete/sotr1.jpg" alt="">
+                            <div class="article-info">
+                                <h3>Сотрудничество с банками</h3>
+                                <p class="desktop">Нам интересно любое банковское сотрудничество</p>
+                                <p class="mobile">Нам интересно любое банковское сотрудничество</p>
+                                <div class="article-link">
+                                    <p>подробнее</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li onclick="openServicePopup(2)" class="revealator-slideup revealator-duration5 revealator-once">
+                        <article>
+                            <img src="./assets/images/delete/sotr1.jpg" alt="">
+                            <div class="article-info">
+                                <h3>Сотрудничество с банками</h3>
+                                <p class="desktop">Нам интересно любое банковское сотрудничество</p>
+                                <p class="mobile">Нам интересно любое банковское сотрудничество</p>
+                                <div class="article-link">
+                                    <p>подробнее</p>
+                                    <i></i>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <ul class="grid-list_bottom">
+                        <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                            <i style="background-image: url(./assets/images/icon1.svg);"></i>
+                            <p>Работаем под ключ</p>
+                        </li>
+                        <li class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                            <i style="background-image: url(./assets/images/icon2.svg);"></i>
+                            <p>У вас будет персональный мененджер</p>
+                        </li>
+                        <li class="revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                            <i style="background-image: url(./assets/images/icon3.svg);"></i>
+                            <p>Оформим все документы и отправим их в банки</p>
+                        </li>
+                    </ul>
+                </ul>
+                <div class="line"></div>
+                <ul class="grid-list_bottom">
+                    <li class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i style="background-image: url(./assets/images/icon1.svg);"></i>
+                        <p>Работаем под ключ</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                        <i style="background-image: url(./assets/images/icon2.svg);"></i>
+                        <p>У вас будет персональный мененджер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                        <i style="background-image: url(./assets/images/icon3.svg);"></i>
+                        <p>Оформим все документы и отправим их в банки</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <div id="online_translator">
+                <div class="online_translator__dark"></div>
+                <div class="online_translator__dark1"></div>
+                <section>
+                    <div class="live">
+                        <i></i>
+                        <p>live</p>
+                    </div>
+                    <h2>Онлайн-статус одобрения заявок</h2>
+                    <div data-simplebar id="online_translator__inner" class="online_translator">
+                        <div class="online_translator__head">
+                            <div class="table_row">
+                                <p>время заявки</p>
+                                <p>номер заявки</p>
+                                <p>запрошенная сумма</p>
+                                <p>статус</p>
+                                <p>решение банков</p>
+                            </div>
+                        </div>
+                        <div class="online_translator__body">
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="true">Одобрено</p>
+                                <ul>
+                                    <li>в 4 банках по ставке 9,1% - 22 123 ₽/мес.</li>
+                                </ul>
+                            </div>
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="true">Одобрено</p>
+                                <ul>
+                                    <li>в 4 банках по ставке 9,1% - 22 123 ₽/мес.</li>
+                                </ul>
+                            </div>
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="true">Одобрено</p>
+                                <ul>
+                                    <li>в 4 банках по ставке 9,1% - 22 123 ₽/мес.</li>
+                                    <li>в 2 банках по ставке 11,1% - 25 123 ₽/мес.</li>
+                                </ul>
+                            </div>
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="false">Отказано</p>
+                                <ul>
+                                    <li>-</li>
+                                </ul>
+                            </div>
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="true">Одобрено</p>
+                                <ul>
+                                    <li>в 4 банках по ставке 9,1% - 22 123 ₽/мес.</li>
+                                </ul>
+                            </div>
+                            <div class="table_row">
+                                <p>2 минуты назад</p>
+                                <p>№ 202451</p>
+                                <p>10 154 000 ₽</p>
+                                <p class="true">Одобрено</p>
+                                <ul>
+                                    <li>в 4 банках по ставке 9,1% - 22 123 ₽/мес.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="online_translator__footer">
+                        <p>Получите решение от банка для вашей ситуации</p>
+                        <a href="" class="btn">получить решение</a>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Рассчет выгоды при<br> сотрудничестве с нами</h2>
+                <div class="rasschet_wrapper">
+                    <div class="rasschet_wrapper__left revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                        <div class="rasschet_wrapper__left--circle">
+                            <label>
+                                <span>размер кредита:</span>
+                                <div class="input_range">
+                                    <p id="size_credit">5 000 000 ₽</p>
+                                    <input 
+                                        min="500000" 
+                                        max="20000000" 
+                                        value="2700000"  
+                                        step="50000"
+                                        type="range" 
+                                        name="size_credit__name" 
+                                        id="size_credit__range"
+                                    >
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rasschet_wrapper__left--circle">
+                            <label>
+                                <span>cрок кредитования:</span>
+                                <div class="input_range">
+                                    <p id="srok">20 лет</p>
+                                    <input 
+                                        min="2"
+                                        max="25"
+                                        value="20"
+                                        type="range" 
+                                        name="srok__name" 
+                                        id="srok__range"
+                                    >
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rasschet_wrapper__left--circle">
+                            <label>
+                                <span>первоначальный взнос:</span>
+                                <div class="input_range">
+                                    <p id="per_vznos">2 000 000 ₽</p>
+                                    <p id="percent">30%</p>
+                                    <input
+                                        min="700000" 
+                                        max="20000000" 
+                                        value="500000" 
+                                        step="50000"
+                                        type="range" 
+                                        name="per_vznos__name" 
+                                        id="per_vznos__range"
+                                    >
+                                </div>
+                            </label>
+                        </div>
+                        <div class="rasschet_wrapper__left--checkbox">
+                            <label>
+                                <input type="checkbox" name="input_checkbox__name" id="input_checkbox__range">
+                                <i></i>
+                                <p>Нет первоначального взноса</p>
+                            </label>
+                        </div>
+                        <div class="rasschet_wrapper__left--type">
+                            <span>тип недвижимости:</span>
+                            <ul class="rasschet_wrapper__left--type_ul">
+                                <li data-id="0" class="active">Новостройка</li>
+                                <li data-id="1">Вторичка</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rasschet_wrapper__right revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                        <div class="rasschet_wrapper__right--wrapper">
+                            <h3>Ипотечная ставка на рынке</h3>
+                            <ul>
+                                <li>
+                                    <span>ежемесячный платеж:</span>
+                                    <p id="mounth_price">34 456 ₽</p>
+                                </li>
+                                <li>
+                                    <span>переплата:</span>
+                                    <p id="pereplata">4 203 111 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rasschet_wrapper__right--wrapper wea">
+                            <h3>Ставка с нашими преференциями</h3>
+                            <ul>
+                                <li>
+                                    <span>ежемесячный платеж:</span>
+                                    <p id="mounth_price_we">24 456 ₽</p>
+                                </li>
+                                <li>
+                                    <span>переплата:</span>
+                                    <p id="pereplata_we">2 203 111 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="rasschet_wrapper__right--footer">
+                            <ul>
+                                <li>
+                                    <span>вы экономите:</span>
+                                    <p id="econom">2 000 000 ₽</p>
+                                </li>
+                            </ul>
+                            <a href="" class="btn">получить одобрение онлайн</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <div class="utp-wrapper">
+                <div class="dark-utp"></div>
+                <div class="dark-utp-1"></div>
+                <section>
+                    <h2 class="revealator-slideup revealator-duration5 revealator-delay4">Почему с нами выгодно?</h2>
+                    <div class="utp-swip revealator-slideup revealator-duration5 revealator-delay6">
+                        <div class="swiper swiper-utp">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide utp-slide">
+                                    <i></i>
+                                    <h3>Не берем<br>предоплату</h3>
+                                    <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+                                </div>
+                                <div class="swiper-slide utp-slide">
+                                    <i></i>
+                                    <h3>Беремся даже<br>за сложные случаи</h3>
+                                    <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+                                </div>
+                                <div class="swiper-slide utp-slide">
+                                    <i></i>
+                                    <h3>Выгодные партнерские отношения</h3>
+                                    <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь, должны быть описаны максимально подробно.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigate utp_navigate revealator-slideup revealator-duration5 revealator-delay4">
+                            <i class="utp_navigate__prev"></i>
+                            <i class="utp_navigate__next"></i>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Преимущества подачи заявки<br> на одобрения с нашей помощью</h2>
+                <div class="advantage__wrapper">
+                    <article class="advantage_item revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                        <h3>Самостоятельная подача</h3>
+                        <ul>
+                            <li>
+                                <p>Сотрудники банков не разглашают причины отказа
+                                    и также не могут сказать на каком именно этапе возникла та или иная проблема.</p>
+                            </li>
+                            <li>
+                                <p>При отказе у одного банка, Вам придётся тратить время на подачу заявок в другие банки. Плохо в том, что существует единая платформа, где идёт отражение на Вашу кредитную историю количество поданных заявок и отказов по ним. Это отрицательно сказывается на рейтинг кредитной истории в НБКИ.</p>
+                            </li>
+                            <li>
+                                <p>Некомпетентность сотрудников банка может обернуться серьёзными потерями , тк на изучение кредитных продуктов нужно большое время и нет горантий что приятная молодая девушка знает все подводные камни.</p>
+                            </li>
+                            <li>
+                                <p>Если Вы решите получить кредит в банке, то можете расчитывать только на 35% одобрения. На каждом этапе свои органы, которые придираются.</p>
+                            </li>
+
+                            <li class="hide">
+                                <p>Сотрудники банков не разглашают причины отказа
+                                    и также не могут сказать на каком именно этапе возникла та или иная проблема.</p>
+                            </li>
+                            <li class="hide">
+                                <p>При отказе у одного банка, Вам придётся тратить время на подачу заявок в другие банки. Плохо в том, что существует единая платформа, где идёт отражение на Вашу кредитную историю количество поданных заявок и отказов по ним. Это отрицательно сказывается на рейтинг кредитной истории в НБКИ.</p>
+                            </li>
+                            <li class="hide">
+                                <p>Некомпетентность сотрудников банка может обернуться серьёзными потерями , тк на изучение кредитных продуктов нужно большое время и нет горантий что приятная молодая девушка знает все подводные камни.</p>
+                            </li>
+                            <li class="hide">
+                                <p>Если Вы решите получить кредит в банке, то можете расчитывать только на 35% одобрения. На каждом этапе свои органы, которые придираются.</p>
+                            </li>
+                        </ul>
+                        <a href="" class="all">показать все <i></i></a>
+                    </article>
+                    <article class="advantage_item revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                        <h3>Что предлагаем мы</h3>
+                        <ul>
+                            <li>
+                                <p>Мы знаем причины отказа на всех этапах одобрения и сможем помочь на разных уровнях: андерайдинга, кредитного комитета, службы безопасности банка — работая с Вашей кредитной историей</p>
+                            </li>
+                            <li>
+                                <p>Мы можем снизить ставку для наших клиентов за счет предоставляемых преференций более чем у 25 ТОП-банков партнеров на боле низкий процент,чем предлагают банки</p>
+                            </li>
+                            <li>
+                                <p>Мы подбираем Банк исходя из кредитной истории и возможности получить кредит. Процент получения кредита у нас - более 95%.</p>
+                            </li>
+                            <li>
+                                <p>Мы сделаем работу за Вас - от подписания договора до получения свидетельства о собственности Вам не придётся посещать банк, всё тщательно проверяя по документам</p>
+                            </li>
+                            <li>
+                                <p>Мы предлагаем комплекс услуг, исключая работы с другими фирмами, тем самым Вы экономите время и средства.</p>
+                            </li>
+                        </ul>
+                        <a href="" class="btn">получить консультацию</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <h2 class="revealator-once revealator-slideup revealator-delay4 revealator-duration5">Схема получения ипотеки</h2>
+                <ul class="schema schema-index">
+                    <li class="revealator-once revealator-slideup revealator-delay6 revealator-duration5">
+                        <div>
+                            <i style="background-image: url(./assets/images/schema-1-i.svg)"></i>
+                            <i></i>
+                        </div>
+                        <h3><span>01.</span> Консультация</h3>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь</p>
+                    </li>
+                    <li class="revealator-once revealator-slideup revealator-delay9 revealator-duration5">
+                        <div>
+                            <i style="background-image: url(./assets/images/schema-2-i.svg)"></i>
+                            <i></i>
+                        </div>
+                        <h3><span>02.</span> Анализ</h3>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь</p>
+                    </li>
+                    <li class=" revealator-once revealator-slideup revealator-delay12 revealator-duration5">
+                        <div>
+                            <i style="background-image: url(./assets/images/schema-3-i.svg)"></i>
+                            <i></i>
+                        </div>
+                        <h3><span>03.</span> Подача заявки</h3>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь</p>
+                    </li>
+                    <li class=" revealator-once revealator-slideup revealator-delay15 revealator-duration5">
+                        <div>
+                            <i style="background-image: url(./assets/images/schema-4-i.svg)"></i>
+                            <i></i>
+                        </div>
+                        <h3><span>04.</span> Получение ипотеки</h3>
+                        <p>И нет сомнений, что некоторые особенности внутренней политики призывают нас к новым свершениям, которые, в свою очередь</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="section-wrapper revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+            <section>
+                <form id="kviz">
+                    <article id="kviz_1">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div style="background-image: url(./assets/images/kviz/1.png);" class="fon-1"></div>
+                        <div class="kviz_info">
+                            <h3>Получите выгодное одобрение</h3>
+                            <p>Ответьте на 13 вопросов и мы подбрем для вас наиболее выгодноее решение. Это не займент много времени</p>
+                            <ul>
+                                <li>2<span> минуты</span></li>
+                                <li>13<span> вопросов</span></li>
+                            </ul>
+                            <a data-index="2" href="" class="btn">пройти тест</a>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/2.jpg);" id="kviz_2">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 1 из 14</span>
+                                <h3>Какая вам нужна недвижимость?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="type_nedvij" value="новостройка" id="" checked>
+                                    <p>новостройка</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="type_nedvij" value="готовое жилье" id="">
+                                    <p>готовое жилье</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="3" href="" class="btn">далее</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/3.jpg);" id="kviz_3">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 2 из 14</span>
+                                <h3>Что конкретно 
+                                    Вас интересует?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="interes_nedvij" value="квартира" id="" checked>
+                                    <p>квартира</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="interes_nedvij" value="комната / доля" id="">
+                                    <p>комната / доля</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="interes_nedvij" value="загородный дом" id="" >
+                                    <p>загородный дом</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="interes_nedvij" value="элитная недвижимость" id="">
+                                    <p>элитная недвижимость</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="interes_nedvij" value="апартаменты" id="" >
+                                    <p>апартаменты</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="4" href="" class="btn">далее</a>
+                                <a data-index="2" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/4.jpg);" id="kviz_4">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 3 из 14</span>
+                                <h3>Какую сумму Вы планируете брать?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="summ_nedvij" value="до 3 000 000" id="" checked>
+                                    <p>до 3 000 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="summ_nedvij" value="3 000 000 - 6 000 000" id="">
+                                    <p>3 000 000 - 6 000 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="summ_nedvij" value="6 000 000 - 10 000 000" id="" >
+                                    <p>6 000 000 - 10 000 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="summ_nedvij" value="более 10 000 000" id="">
+                                    <p>более 10 000 000</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="5" href="" class="btn">далее</a>
+                                <a data-index="3" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/5.jpg);" id="kviz_5">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 4 из 14</span>
+                                <h3 style="max-width: 650px;">У Вас имеется первоначальный взнос?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="f_vznos_nedvij" value="без взноса" id="" checked>
+                                    <p>без взноса</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="f_vznos_nedvij" value="10%" id="">
+                                    <p>10%</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="f_vznos_nedvij" value="20%" id="" >
+                                    <p>20%</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="f_vznos_nedvij" value="30%" id="">
+                                    <p>30%</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="f_vznos_nedvij" value="40% и более" id="">
+                                    <p>40% и более</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="6" href="" class="btn">далее</a>
+                                <a data-index="4" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/6.jpg);" id="kviz_6">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 5 из 14</span>
+                                <h3>Есть ли у Вас имущество
+                                    под залог?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="zalog_nedvij" value="да, автомобиль" id="" checked>
+                                    <p>да, автомобиль</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zalog_nedvij" value="да, жилая площадь / участок" id="">
+                                    <p>да, жилая площадь / участок</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zalog_nedvij" value="нет" id="" >
+                                    <p>нет</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="7" href="" class="btn">далее</a>
+                                <a data-index="5" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/7.jpg);" id="kviz_7">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 6 из 14</span>
+                                <h3>На какой срок желаете 
+                                    взять кредит?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="srok_nedvij" value="5 лет" id="" checked>
+                                    <p>5 лет</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="srok_nedvij" value="10 лет" id="">
+                                    <p>10 лет</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="srok_nedvij" value="15 лет" id="" >
+                                    <p>15 лет</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="srok_nedvij" value="20 и более лет" id="" >
+                                    <p>20 и более лет</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="8" href="" class="btn">далее</a>
+                                <a data-index="6" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/8.jpg);" id="kviz_8">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 7 из 14</span>
+                                <h3>Ваше гражданство?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="grazjdanstvo_nedvij" value="россия (резидент рф)" id="" checked>
+                                    <p>россия (резидент рф)</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="grazjdanstvo_nedvij" value="другая страна (не резидент РФ)" id="">
+                                    <p>другая страна (не резидент РФ)</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="9" href="" class="btn">далее</a>
+                                <a data-index="7" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/9.jpg);" id="kviz_9">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 8 из 14</span>
+                                <h3>Ваша трудовая деятельность?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="trud_nedvij" value="наемный работник" id="" checked>
+                                    <p>наемный работник</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="trud_nedvij" value="самозанятый" id="">
+                                    <p>самозанятый</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="trud_nedvij" value="ИП / Юр.лицо" id="">
+                                    <p>ИП / Юр.лицо</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="trud_nedvij" value="гос. служащий" id="">
+                                    <p>гос. служащий</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="trud_nedvij" value="нет трудоустройства" id="">
+                                    <p>нет трудоустройства</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="10" href="" class="btn">далее</a>
+                                <a data-index="8" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/10.jpg);" id="kviz_10">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 9 из 14</span>
+                                <h3 style="max-width: 650px;">Укажите уровень среднемесячного дохода</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="zp_nedvij" value="до 35 000" id="" checked>
+                                    <p>до 35 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zp_nedvij" value="35 000 - 50 000" id="">
+                                    <p>35 000 - 50 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zp_nedvij" value="50 000 - 100 000" id="">
+                                    <p>50 000 - 100 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zp_nedvij" value="100 000 - 200 000" id="">
+                                    <p>100 000 - 200 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="zp_nedvij" value="более 200 000" id="">
+                                    <p>более 200 000</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="11" href="" class="btn">далее</a>
+                                <a data-index="9" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/11.jpg);" id="kviz_11">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 10 из 14</span>
+                                <h3 style="max-width: 650px;">Ваши доходы являются официальными?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="offical_nedvij" value="да" id="" checked>
+                                    <p>да</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="offical_nedvij" value="частично" id="">
+                                    <p>частично</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="offical_nedvij" value="нет" id="">
+                                    <p>нет</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="12" href="" class="btn">далее</a>
+                                <a data-index="10" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/12.jpg);" id="kviz_12">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 11 из 14</span>
+                                <h3 style="max-width: 650px;">Есть ли у Вас кредитные обязательства?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="dolg_nedvij" value="да, до 20 000" id="" checked>
+                                    <p>да, до 20 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="dolg_nedvij" value="да, 20 000 - 50 000" id="">
+                                    <p>да, 20 000 - 50 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="dolg_nedvij" value="50 000 - 100 000" id="">
+                                    <p>50 000 - 100 000</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="dolg_nedvij" value="свыше 100 000" id="">
+                                    <p>свыше 100 000</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="13" href="" class="btn">далее</a>
+                                <a data-index="11" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/13.jpg);" id="kviz_13">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 12 из 14</span>
+                                <h3 style="max-width: 655px;">Планируется использование материнского капитала?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="mat_nedvij" value="да" id="" checked>
+                                    <p>да</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="mat_nedvij" value="нет" id="">
+                                    <p>нет</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="14" href="" class="btn">далее</a>
+                                <a data-index="12" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/14.jpg);" id="kviz_14">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 13 из 14</span>
+                                <h3 style="max-width: 650px;">Ваша кредитная история?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="history_nedvij" value="без просрочек" id="" checked>
+                                    <p>без просрочек</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="history_nedvij" value="задержки платежей до 5 дней" id="">
+                                    <p>задержки платежей до 5 дней</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="history_nedvij" value="были серьезные просрочки" id="">
+                                    <p>были серьезные просрочки</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="history_nedvij" value="есть просрочки, но готов(а) их погасить" id="">
+                                    <p>есть просрочки, но готов(а) их погасить</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="15" href="" class="btn">далее</a>
+                                <a data-index="13" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/15.jpg);" id="kviz_15">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>Вопрос 14 из 14</span>
+                                <h3 style="max-width: 920px;">Оставляли заявки в банки на получение ипотеки\рефенансирования?</h3>
+                            </div>
+                            <div class="kviz__input_wrapper">
+                                <label>
+                                    <input type="radio" name="ref_nedvij" value="да, получил выгодные условия" id="" checked>
+                                    <p>да, получил выгодные условия</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="ref_nedvij" value="да, получил отказ" id="">
+                                    <p>да, получил отказ</p>
+                                </label>
+                                <label>
+                                    <input type="radio" name="ref_nedvij" value="нет, не обращался(ась)" id="">
+                                    <p>нет, не обращался(ась)</p>
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <a data-index="16" href="" class="btn">далее</a>
+                                <a data-index="14" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                    <article style="background-image: url(./assets/images/kviz/16.jpg);" id="kviz_16">
+                        <div class="dark-1"></div>
+                        <div class="dark-2"></div>
+                        <div class="kviz_info">
+                            <div>
+                                <span>финал</span>
+                                <h3 style="max-width: 650px;">Остался последнйи шаг</h3>
+                            </div>
+                            <div class="kviz__input_wrapper final">
+                                <label>
+                                    <input type="text" name="name_person__kviz" id="" placeholder="ваше имя">
+                                </label>
+                                <label>
+                                    <input type="text" name="number_person__kviz" id="" placeholder="ваше номер">
+                                </label>
+                            </div>
+                            <div class="kviz_navigate">
+                                <input type="submit" placeholder="получить рассчет">
+                                <a data-index="15" href="" class="back">назад</a>
+                            </div>
+                        </div>
+                    </article>
+                </form>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <div class="covid-wrapper">
+                <div class="dark"></div>
+                <div class="dark-1"></div>
+                <section class="covid_text">
+                    <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Мы соблюдаем все нормы безопасности в связи с COVID-19</h2>
+                    <ul>
+                        <li class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                            <i style="background-image: url(./assets/images/covid_icon1.svg);"></i>
+                            <p>Можем провести<br> Online-консультации</p>
+                        </li>
+                        <li class="revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                            <i style="background-image: url(./assets/images/covid_icon2.svg);"></i>
+                            <p>Работаем 24/7</p>
+                        </li>
+                        <li class="revealator-slideup revealator-duration5 revealator-delay7 revealator-once">
+                            <i style="background-image: url(./assets/images/covid_icon3.svg);"></i>
+                            <p>С заботой о Вас<br>
+                                и ваших близких</p>
+                        </li>
+                    </ul>
+                    <a href="" class="btn">получить консультацию</a>
+                </section>
+            </div>
+        </div>
+
+        <div id="about" class="section-wrapper about">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay2 revealator-once">О компании</h2>
+                <div id="about_inner" class="revealator-slideup revealator-duration5 revealator-delay6 revealator-once">
+                    <div class="about__inner">
+                        <p>Наша компания уже более 13 лет работает по уникальной программе подбора индивидуальных ипотечных продуктов среди множества банков специально для Вас!</p>
+                        <p>Профессиональный андеррайтинг позволяет нам максимально точно составить индивидуальный портрет заемщика, подобрать нужный для клиента продукт и оформить его ниже рыночных условий.</p>
+                        <p>За всё время работы, наша компания успела себя основательно зарекомендовать не только среди наших клиентов, но и среди множества топовых банков, ипотечных компаний и риелторских агентств. Благодаря нашим преференциям, наши клиенты имеют льготные условия для получения или рефинансирования ипотечных продуктов, такие как: минимальная процентная ставка, комфортный срок кредитования, добор денежных средств на руки, минимальный размер первоначального взноса или его отсутствие, ипотечные продукты для граждан РФ и СНГ и многое другое.</p>
+                    </div>
+                    <a class="about_btn" href="">подробнее о компании <i></i></a>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper about-image">
+            <section>
+                <img class="revealator-slideright revealator-duration5 revealator-delay2 revealator-once" src="./assets/images/delete/company.png" alt="">
+                <div class="line revealator-slideup revealator-duration5 revealator-delay4 revealator-once"></div>
+            </section>
+        </div>
+
+        <div class="section-wrapper about-footer">
+            <section>
+                <ul>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay5">
+                        <i style="background-image: url(./assets/images/a1.svg);"></i>
+                        <p>Более 13 лет на рынке</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay10">
+                        <i style="background-image: url(./assets/images/a2.svg);"></i>
+                        <p>Работаем по всей России</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay15">
+                        <i style="background-image: url(./assets/images/a3.svg);"></i>
+                        <p>Более 300 экспертов</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <div class="command_head">
+                    <h2>Команда</h2>
+                    <div class="command_navigate navigate command_navigate__desktop revealator-slideup revealator-duration5 revealator-delay1 revealator-once">
+                        <i class="command_navigate__prev"></i>
+                        <i class="command_navigate__next"></i>
+                    </div>
+                </div>
+                <div class="command_body swiper revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                    <ul class="swiper-wrapper">
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                        <li style="background-image: url(./assets/images/command.jpg);" class="swiper-slide">
+                            <div class="command_dark"></div>
+                            <div class="command_info">
+                                <h3>Имя</h3>
+                                <p>Должность</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="command_navigate navigate command_navigate__mobile revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                    <i class="command_navigate__prev"></i>
+                    <i class="command_navigate__next"></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper sertificate-wrapper">
+            <section>
+                <div class="sertificate-head">
+                    <h2 class="revealator-slideup revealator-duration5 revealator-delay2 revealator-once">Сертификаты</h2>
+                    <div class="sertificate_navigate navigate sertificate_navigate__desktop revealator-once revealator-slideup revealator-duration5 revealator-delay2">
+                        <i class="sertificate_navigate__prev"></i>
+                        <i class="sertificate_navigate__next"></i>
+                    </div>
+                </div>
+                <div class="swiper sertificate-body revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                        <div class="swiper-slide srtificate-slide"><img src="./assets/images/delete/serf_item.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="sertificate_navigate navigate sertificate_navigate__mobile revealator-slideup revealator-once revealator-duration5 revealator-delay4">
+                    <i class="sertificate_navigate__prev"></i>
+                    <i class="sertificate_navigate__next"></i>
+                </div>
+            </section>
+        </div>
+
+        <div id="partners" class="section-wrapper">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">Банки-партнеры</h2>
+                <ul class="partners">
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/sber.png" alt="">
+                        <p>Сбер</p>
+                    </li>
+                    <li class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once">
+                        <img src="./assets/images/delete/raiff.png" alt="">
+                        <p>Райффайзен банк</p>
+                    </li>
+                </ul>
+                <a href="" class="btn btn_partners">показать все 24 партнера</a>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <div class="kase_main__header">
+                    <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Кейсы</h2>
+                    <div class="kase_main_navigate navigate kase_main_navigate__desktop revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                        <i class="case_main_navigate__prev"></i>
+                        <i class="case_main_navigate__next"></i>
+                    </div>
+                </div>
+                <div class="case_main-wrapper__body swiper revealator-slideup revealator-duration5 revealator-delay5 revealator-once">
+                    <ul class="swiper-wrapper">
+                        <li onclick="openCasePopup(0)" class="swiper-slide" style="background-image: url(./assets/images/delete/case_main.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Ипотека для музыканта</h3>
+                                <ul>
+                                    <li>
+                                        <h3>4 <span>дня</span></h3>
+                                        <p>срок выполнения</p>
+                                    </li>
+                                    <li>
+                                        <h3>6 <span>млн ₽</span></h3>
+                                        <p>сумма кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li onclick="openCasePopup(0)" class="swiper-slide" style="background-image: url(./assets/images/delete/case_main.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Ипотека для музыканта</h3>
+                                <ul>
+                                    <li>
+                                        <h3>4 <span>дня</span></h3>
+                                        <p>срок выполнения</p>
+                                    </li>
+                                    <li>
+                                        <h3>6 <span>млн ₽</span></h3>
+                                        <p>сумма кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li onclick="openCasePopup(0)" class="swiper-slide" style="background-image: url(./assets/images/delete/case_main.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Ипотека для музыканта</h3>
+                                <ul>
+                                    <li>
+                                        <h3>4 <span>дня</span></h3>
+                                        <p>срок выполнения</p>
+                                    </li>
+                                    <li>
+                                        <h3>6 <span>млн ₽</span></h3>
+                                        <p>сумма кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li onclick="openCasePopup(0)" class="swiper-slide" style="background-image: url(./assets/images/delete/program_card.jpg);">
+                            <div class="dark-bg"></div>
+                            <div class="programs_info">
+                                <h3>Рефинансирование</h3>
+                                <ul>
+                                    <li>
+                                        <h3>4 <span>дня</span></h3>
+                                        <p>срок выполнения</p>
+                                    </li>
+                                    <li>
+                                        <h3>6 <span>млн ₽</span></h3>
+                                        <p>сумма кредита</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="kase_main_navigate navigate kase_main_navigate__mobile">
+                    <i class="case_main_navigate__prev"></i>
+                    <i class="case_main_navigate__next"></i>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper">
+            <section>
+                <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Часто задаваемые<br>вопросы</h2>
+                <div class="faq_body revealator-slideup revealator-duration5 revealator-delay3 revealator-once">
+                    <article class="faq_elem">
+                        <div class="faq_elem__head">
+                            <h3>Что нужно иметь с собой?</h3>
+                            <i></i>
+                        </div>
+                        <div class="faq_elem__body">
+                            <p>Переоформлять и выписываться не потребуется ни собственнику, ни членам его семьи, включая детей и пенсионеров.</p>   
+                            <p>Оформление происходит по Федеральному Закону 102-ФЗ «Об ипотеке (залоге недвижимости)». В первом же абзаце сказано: «Имущество, на которое установлена ипотека, остаётся у залогодателя в его владении и пользовании». Добавим, что и все оригиналы документов также остаются у вас на руках – без каких-либо отметок об обременении.</p>
+                        </div>
+                    </article>
+                    <article class="faq_elem">
+                        <div class="faq_elem__head">
+                            <h3>Что нужно иметь с собой?</h3>
+                            <i></i>
+                        </div>
+                        <div class="faq_elem__body">
+                            <p>Переоформлять и выписываться не потребуется ни собственнику, ни членам его семьи, включая детей и пенсионеров.</p>   
+                            <p>Оформление происходит по Федеральному Закону 102-ФЗ «Об ипотеке (залоге недвижимости)». В первом же абзаце сказано: «Имущество, на которое установлена ипотека, остаётся у залогодателя в его владении и пользовании». Добавим, что и все оригиналы документов также остаются у вас на руках – без каких-либо отметок об обременении.</p>
+                        </div>
+                    </article>
+                    <article class="faq_elem">
+                        <div class="faq_elem__head">
+                            <h3>Что нужно иметь с собой?</h3>
+                            <i></i>
+                        </div>
+                        <div class="faq_elem__body">
+                            <p>Переоформлять и выписываться не потребуется ни собственнику, ни членам его семьи, включая детей и пенсионеров.</p>   
+                            <p>Оформление происходит по Федеральному Закону 102-ФЗ «Об ипотеке (залоге недвижимости)». В первом же абзаце сказано: «Имущество, на которое установлена ипотека, остаётся у залогодателя в его владении и пользовании». Добавим, что и все оригиналы документов также остаются у вас на руках – без каких-либо отметок об обременении.</p>
+                        </div>
+                    </article>
+                    <article class="faq_elem">
+                        <div class="faq_elem__head">
+                            <h3>Что нужно иметь с собой?</h3>
+                            <i></i>
+                        </div>
+                        <div class="faq_elem__body">
+                            <p>Переоформлять и выписываться не потребуется ни собственнику, ни членам его семьи, включая детей и пенсионеров.</p>   
+                            <p>Оформление происходит по Федеральному Закону 102-ФЗ «Об ипотеке (залоге недвижимости)». В первом же абзаце сказано: «Имущество, на которое установлена ипотека, остаётся у залогодателя в его владении и пользовании». Добавим, что и все оригиналы документов также остаются у вас на руках – без каких-либо отметок об обременении.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <div class="section-wrapper map-wr">
+            <section>
+                <div class="map-wrapper">
+                    <div class="map-dark"></div>
+                    <div class="map-dark-1"></div>
+                    <div class="map-left">
+                        <h2 class="revealator-slideup revealator-duration5 revealator-delay3 revealator-once">Приезжайте к нам в офис</h2>
+                        <div>
+                            <h3 class="revealator-slideup revealator-duration5 revealator-delay7 revealator-once">1-й Автозаводской проезд 4к1.</h3>
+                            <ul class="revealator-slideup revealator-duration5 revealator-delay10 revealator-once">
+                                <li>Бизнес-центр “Баррель”</li>
+                                <li><i></i>Автозаводская</li>
+                            </ul>
+                            <a class="revealator-slideup revealator-duration5 revealator-delay15 revealator-once" href="">Как добраться?</a>
+                        </div>
+                        <ul>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay17 revealator-once">
+                                <i style="background-image: url(./assets/images/map-1.svg);"></i>
+                                <p>Угостим вкусным кофе</p>
+                            </li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay20 revealator-once">
+                                <i style="background-image: url(./assets/images/map-2.svg);"></i>
+                                <p>Всегда свободная парковка</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="" class="btn map">открыть карту</a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div class="footer section-wrapper">
+        <section>
+            <div class="footer_outer">
+                <footer>
+                    <div class="footer-left">
+                        <h2 class="revealator-slideup revealator-duration5 revealator-delay1 revealator-once">Мы будем рады продуктивному<br>сотрудничеству</h2>
+                        <p class="revealator-slideup revealator-duration5 revealator-delay2 revealator-once">Свяжитесь с нами любым удобным<br>Вам способом</p>
+                        <a class="revealator-slideup revealator-duration5 revealator-delay4 revealator-once btn btn__footer open_modal">оставить заявку</a>
+                        <ul class="social">
+                            <li class="revealator-slideup revealator-duration5 revealator-delay6 revealator-once">
+                                <h3>номер телефона:</h3>
+                                <a href="tel:+7 (900)-200 20 20">+7 (900)-200 20 20</a>
+                                <span>По всей России 24/7</span>
+                            </li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay10 revealator-once">
+                                <h3>email:</h3>
+                                <a href="">info@ti.com</a>
+                                <span>Написать</span>
+                            </li>
+                        </ul>
+                        <p class="messegers revealator-slideup revealator-duration5 revealator-delay11 revealator-once">мессенджеры:</p>
+                        <ul class="messegers">
+                            <li class="revealator-slideup revealator-duration5 revealator-delay13 revealator-once"><i></i></li>
+                            <li class="revealator-slideup revealator-duration5 revealator-delay15 revealator-once"><i></i></li>
+                        </ul>
+                        <div class="footer_bottom">
+                            <p class="revealator-slideup revealator-duration5 revealator-delay17 revealator-once" id="kernel">Сайт сделан в <a href="">Kernel-Studio</a></p>
+                            <div class="footer_bottom__under revealator-slideup revealator-duration5 revealator-delay17 revealator-once">
+                                <p>Территория ипотека © 2021. Все права защищены</p>
+                                <a href="">Политика конфиденциальности</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <i class="close_popup"></i>
+                        <h2>Задайте свой вопрос. Наш менеджер перезвонит Вам в течении 15 минут</h2>
+                        <p>на бесплатную консультацию</p>
+                        <form id="form">
+                            <div class="input_form">
+                                <label>
+                                    <input type="text" name="" id="" placeholder="ваше имя">
+                                </label>
+                            </div>
+                            <div class="input_outer">
+                                <div class="input_form label_changer">
+                                    <label data-value="phone" class="active">
+                                        <input type="text" name="phone_label" id="" placeholder="ваш номер телефона">
+                                    </label>
+                                    <label data-value="whatsapp">
+                                        <input type="text" name="whatsapp_label" id="" placeholder="ваш номер whatsapp">
+                                    </label>
+                                    <label data-value="viber">
+                                        <input type="text" name="viber_label" id="" placeholder="ваш номер viber">
+                                    </label>
+                                    <label data-value="email">
+                                        <input type="email" name="email_label" id="" placeholder="ваш email">
+                                    </label>
+                                </div>
+                            </div>
+                            <textarea name="comment" placeholder="комментарий"></textarea>
+                            <h3>где с вами удобнее связаться?</h3>
+                            <ul class="input_changer">
+                                <li data-value="mobile" data-index="0" class="input_changer__list active">
+                                    <i class="mobile"></i>
+                                    <p>Мобильный</p>
+                                </li>
+                                <li data-value="whatsapp" data-index="1" class="input_changer__list">
+                                    <i class="whatsapp"></i>
+                                    <p>WhatsApp</p>
+                                </li>
+                                <li data-value="viber" data-index="2" class="input_changer__list">
+                                    <i class="viber"></i>
+                                    <p>Viber</p>
+                                </li>
+                                <li data-value="email" data-index="3" class="input_changer__list">
+                                    <i class="email"></i>
+                                    <p>Email</p>
+                                </li>
+                            </ul>
+                            <div class="policy_wrapper">
+                                <label>
+                                    <input type="checkbox" checked name="policy" class="policy">
+                                    <i></i>
+                                    <p>Я согласен с <a href="">политикой конфиденциальности</a></p>
+                                </label>
+                            </div>
+                            <input type="submit" class="submit_form" value="оставить заявку">
+                        </form>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </div>
+
+    <aside class="">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>Меню</h2>
+                <i class="close-aside"></i>
+            </div>
+            <hr>
+            <div class="sidebar-body">
+                <nav>
+                    <div class="page-nav--mobile">
+                        <a class="chast" href="">Частным клиентам</a>
+                        <a class="partner" href="">Партнерам</a>
+                    </div>
+                    <ul>
+                        <li><a href="">Наша помощь</a></li>
+                        <li><a href="">Ипотечные программы</a></li>
+                        <li><a href="">Услуги</a></li>
+                        <li><a href="">Калькулятор стоимости</a></li>
+                        <li><a href="">Почему мы</a></li>
+                        <li><a href="">Работа во время COVID-19</a></li>
+                        <li><a href="">О компании</a></li>
+                        <li><a href="">Кейсы</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                    <a class="btn open_modal">получить консультацию</a>
+                    <div class="aside-links">
+                        <a href="mailto:info@ti.com" class="mail">info@ti.com</a>
+                        <a href="tel:+7 (480)123-45-67" class="tel">+7 (480)123-45-67</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </aside>
     
+    <div class="blackout_layer blackout_layer__main"></div>
+
+    <div class="modal_outer">
+        <div class="modal">
+            <i class="close_popup"></i>
+            <h2>Оставьте заявку</h2>
+            <p>на бесплатную консультацию</p>
+            <form id="form_1">
+                <div class="input_form">
+                    <label>
+                        <input type="text" name="" id="" placeholder="ваше имя">
+                    </label>
+                </div>
+                <div class="input_outer">
+                    <div class="input_form label_changer">
+                        <label data-value="phone" class="active">
+                            <input class="" type="text" name="phone_label" id="" placeholder="ваш номер телефона">
+                        </label>
+                        <label data-value="whatsapp">
+                            <input type="text" name="whatsapp_label" id="" placeholder="ваш номер whatsapp">
+                        </label>
+                        <label data-value="viber">
+                            <input type="text" name="viber_label" id="" placeholder="ваш номер viber">
+                        </label>
+                        <label data-value="email">
+                            <input type="email" name="email_label" id="" placeholder="ваш email">
+                        </label>
+                    </div>
+                </div>
+                <textarea name="comment" placeholder="комментарий"></textarea>
+                <h3>где с вами удобнее связаться?</h3>
+                <div class="select input_changer__mobile">
+                    <button type="button" class="select__toggle" name="input_changer__mobile" value="phone" data-select="toggle" data-index="0">Мобильный</button>
+                    <div class="select__dropdown">
+                      <ul class="select__options">
+                        <li class="select__option select__option_selected" data-select="option" data-value="phone" data-index="0"><i></i> Мобильный</li>
+                        <li class="select__option" data-select="option" data-value="whatsapp" data-index="1"><i></i> WhatsApp</li>
+                        <li class="select__option" data-select="option" data-value="viber" data-index="2"><i></i> Viber</li>
+                        <li class="select__option" data-select="option" data-value="email" data-index="3"><i></i> Email</li>
+                      </ul>
+                    </div>
+                  </div>
+                <ul class="input_changer">
+                    <li data-value="mobile" data-index="0" class="input_changer__list active">
+                        <i class="mobile"></i>
+                        <p>Мобильный</p>
+                    </li>
+                    <li data-value="whatsapp" data-index="1" class="input_changer__list">
+                        <i class="whatsapp"></i>
+                        <p>WhatsApp</p>
+                    </li>
+                    <li data-value="viber" data-index="2" class="input_changer__list">
+                        <i class="viber"></i>
+                        <p>Viber</p>
+                    </li>
+                    <li data-value="email" data-index="3" class="input_changer__list">
+                        <i class="email"></i>
+                        <p>Email</p>
+                    </li>
+                </ul>
+                <div class="policy_wrapper">
+                    <label>
+                        <input type="checkbox" checked name="policy" class="policy">
+                        <i></i>
+                        <p>Я согласен с <a href="">политикой конфиденциальности</a></p>
+                    </label>
+                </div>
+                <input type="submit" class="submit_form" value="оставить заявку">
+            </form>
+        </div>
+    </div>
+
+    <div class="modal-thanks_outer">
+        <div class="modal-thanks">
+            <i class="close_thanks"></i>
+            <h2>Спасибо за заявку!</h2>
+            <p>Наш менеджер свяжется с Вами в ближаешее время</p>
+            <img src="./assets/images/thanks.svg" alt="">
+            <a href="" class="btn btn_thanks">закрыть</a>
+        </div>
+    </div>
+
+    <div class="map_popup__outer">
+        <div class="map_popup">
+            <i class="close_map"></i>
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b957d992ebd258d0928174c79aab01dfdfb67978641907089932fbd2d22965a&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <div class="fixed-left"></div>
+    <div class="fixed-right">
+        <a class="bubble"></a>
+        <a class="phone"></a>
+        <a class="mail"></a>
+    </div>
+
+    <section class="fixed-up">
+        <div class="cookie cookie1">
+            <p>Мы используем <a href="">cookie-файлы</a>, чтобы улучшить сайт для вас</p>
+            <a href="" class="btn btn_cookie">Хорошо</a>
+        </div>
+        <div class="cookie cookie2">
+            <div>
+                <p>Мы соблюдаем все меры предосторожности в связи с пандемией COVID-19.</p>
+                <p class="bold">Есть дистанционная связь по:</p>
+                <ul>
+                    <li><a class="whatsapp" href=""></a></li>
+                    <li><a class="zoom" href=""></a></li>
+                    <li><a class="skype" href=""></a></li>
+                </ul>
+            </div>
+            <a href="" class="btn btn_cookie">Хорошо</a>
+        </div>
+    </section>
+
+    <div style="display: none;" id="service_popup_0" class="service_popup__wrapper">
+        <div class="service_popup__outer">
+            <div class="service_popup">
+                <div style="background-image: url(./assets/images/delete/program_card.jpg);" class="service_popup__header">
+                    <div class="service_popup__close"></div>
+                    <div class="service_popup__header--dark"></div>
+                    <h3>Помощь в оформлении и рефинансировании ипотеки 0</h3>
+                </div>
+                <div class="service_popup__body">
+                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                    <p>А также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML</p>
+                    <a href="" class="btn">получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="service_popup_1" class="service_popup__wrapper">
+        <div class="service_popup__outer">
+            <div class="service_popup">
+                <div style="background-image: url(./assets/images/delete/program_card.jpg);" class="service_popup__header">
+                    <div class="service_popup__close"></div>
+                    <div class="service_popup__header--dark"></div>
+                    <h3>Помощь в оформлении и рефинансировании ипотеки 1</h3>
+                </div>
+                <div class="service_popup__body">
+                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                    <p>А также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML</p>
+                    <a href="" class="btn">получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;" id="service_popup_2" class="service_popup__wrapper">
+        <div class="service_popup__outer">
+            <div class="service_popup">
+                <div style="background-image: url(./assets/images/delete/program_card.jpg);" class="service_popup__header">
+                    <div class="service_popup__close"></div>
+                    <div class="service_popup__header--dark"></div>
+                    <h3>Помощь в оформлении и рефинансировании ипотеки 2</h3>
+                </div>
+                <div class="service_popup__body">
+                    <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона</p>
+                    <p>А также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML</p>
+                    <a href="" class="btn">получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: none;" id="case_popup_0" class="service_popup__wrapper case_popup__wrapper">
+        <div class="service_popup__outer case_popup__outer">
+            <div class="service_popup case_popup">
+                <div style="background-image: url(./assets/images/delete/program_card.jpg);" class="case_popup__header service_popup__header">
+                    <div class="service_popup__close"></div>
+                    <div class="service_popup__header--dark"></div>
+                    <h3>Покупка элитной недвижимости</h3>
+                    <ul>
+                        <li>
+                            <h3>4 <span>дня</span></h3>
+                            <p>срок выполнения</p>
+                        </li>
+                        <li>
+                            <h3>6 <span>млн ₽</span></h3>
+                            <p>сумма кредита</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="service_popup__body case_popup__body">
+                    <h3>Анна</h3>
+                    <div class="case_popup__body--row">
+                        <div class="case_popup__body--left">
+                            <p>Задача:</p>
+                        </div>
+                        <div class="case_popup__body--right">
+                            <p>ИП, с небольшими оборотами по счетам и высокой кредитной нагрузкой</p>
+                        </div>
+                    </div>
+                    <div class="case_popup__body--row">
+                        <div class="case_popup__body--left">
+                            <p>решение:</p>
+                        </div>
+                        <div class="case_popup__body--right">
+                            <p>Нами была составлена управленческая отчетность по бизнесу, прописаны реальные доходы 
+                                от деятельности, предоставлены фото бизнеса</p>
+                        </div>
+                    </div>
+                    <div class="case_popup__body--row">
+                        <div class="case_popup__body--left">
+                            <p>Итог:</p>
+                        </div>
+                        <div class="case_popup__body--right">
+                            <ul>
+                                <li>
+                                    <h4>Тип кредита:</h4>
+                                    <p>Потребительский</p>
+                                </li>
+                                <li>
+                                    <h4>Полученная сумма:</h4>
+                                    <p>3 000 000 ₽</p>
+                                </li>
+                                <li>
+                                    <h4>Ставка:</h4>
+                                    <p>12%</p>
+                                </li>
+                                <li>
+                                    <h4>Срок работы:</h4>
+                                    <p>2 недели</p>
+                                </li>
+                                <li>
+                                    <h4>Ежемесячный платеж:</h4>
+                                    <p>28 000 ₽</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="" class="btn">получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -27,7 +2121,7 @@
 			  crossorigin="anonymous"></script>
     <script src="./assets/lib/scripts/fm.revealator.jquery.js"></script>
     <script type="text/javascript">
-        Revealator.effects_padding = '-150';
+        Revealator.effects_padding = '-250';
     </script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/lib/scripts/anime.min.js"></script>
@@ -37,6 +2131,9 @@
     <script src="./assets/scripts/onclickers.js"></script>
     <script src="./assets/scripts/sliders.js"></script>
     <script src="./assets/scripts/window_worker.js"></script>
+    <script src="./assets/scripts/online_translator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./assets/scripts/calculator.js"></script>
     <script src="./assets/scripts/main.js"></script>
 </body>
 </html>

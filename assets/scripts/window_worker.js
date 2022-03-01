@@ -26,7 +26,6 @@ $(window).on('load', function () {
     }, 3600)
 
     if($('.event_popup__outer')) {
-        console.log('event_popup__outer')
         setTimeout(function() {
             $('.event_popup__outer').css('display', 'flex')
             $('.blackout_layer__partner').show()
