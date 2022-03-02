@@ -43,6 +43,7 @@ if ($('.first_slide__swiper')) {
       slidesPerView: 1,
       spaceBetween: 0,
       loop: true,
+      allowTouchMove: false,
       // Navigation arrows
       // navigation: {
       //   nextEl: '.first_slide__swiper_navigate__next',
