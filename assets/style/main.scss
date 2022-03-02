@@ -1371,8 +1371,22 @@ h2.likeH {
     top: -100px;
     z-index: 10;
 
+    object {
+        position: absolute;
+        top: -3px;
+        left: 0px;
+        transform: rotate(-90deg);
+    }
+
     i {
         border-color: #FFFFFF;
+        border: none !important;
+        position: relative;
+    }
+
+    i:hover {
+        background-color: transparent !important;
+        border-color: transparent;
     }
 
     i::before {
@@ -1381,10 +1395,6 @@ h2.likeH {
 
     i::after {
         opacity: 1 !important;
-    }
-
-    i:hover {
-        border-color: #E3AC75;
     }
 }
 
@@ -1452,6 +1462,125 @@ h2.likeH {
 .kase_main_navigate__mobile {
     display: none;
     margin-top: 40px;
+}
+
+.service_business__popup_wrapper {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.service_business__info {
+    position: relative;
+    z-index: 2;
+}
+
+.service_business__popup_outer::-webkit-scrollbar {
+    width: 0;
+}
+
+.service_business__popup_outer {
+    width: 680px;
+    height: 709px;
+    background: #112228;
+    position: relative;
+    padding: 85px 80px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    a.btn {
+        margin-top: 20px;
+    }
+
+    i {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+        background-image: url(../images/close_white.svg);
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-bottom: 60px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 150%;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+    }
+}
+
+.service_business__images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .bg_dark {
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: -webkit-gradient(linear, left bottom, left top, from(#112228), to(rgba(17, 34, 40, 0)));
+        background: linear-gradient(360deg, #112228 25%, rgba(17, 34, 40, 0.2) 100%);
+        z-index: 1;
+        position: absolute;
+    }
+}
+
+.page404 {
+    h1 {
+        margin-bottom: 0 !important;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 140%;
+        margin: 20px 0 50px;
+        max-width: 630px;
+        color: #FFFFFF;
+    }
+
+    .dark-slide_green {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #1C4342;
+        opacity: 0.6;
+    }
+    .dark-slide_black {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: #000000;
+        opacity: 0.2;
+    }
 }
 
 //hd 1200-1440 -- 1160
@@ -1597,6 +1726,11 @@ h2.likeH {
     .navigate_fist_slide__wrapper {
         justify-content: flex-start;
     }
+    .service_business__popup_outer {
+        width: 620px;
+        height: 762px;
+        padding: 90px 60px;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -1730,6 +1864,21 @@ h2.likeH {
         width: 30px;
         height: 30px;
         background-size: 30px;
+    }
+    .service_business__popup_outer {
+        width: 100%;
+        height: 100%;
+        padding: 80px 30px;
+    }
+    .service_business__popup_outer h3 {
+        font-size: 24px;
+    }
+    .page404 p {
+        font-size: 16px;
+        margin: 20px 0 40px;
+    }
+    .page404 h1 {
+        font-size: 46px;
     }
 }
 

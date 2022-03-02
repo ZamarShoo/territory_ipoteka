@@ -96,7 +96,7 @@ if ($('.utp_business')) {
     });
 }
 
-if ($('.utp_business')) {
+if ($('.houses_business__body')) {
     const swiper_houses = new Swiper('.houses_business__body', {
         // Optional parameters
         slidesPerView: 3,
@@ -119,6 +119,33 @@ if ($('.utp_business')) {
         navigation: {
           nextEl: '.houses_business_navigate__next',
           prevEl: '.houses_business_navigate__prev',
+        },
+    });
+}
+
+if ($('.services_business')) {
+    const swiper_houses = new Swiper('.services_business', {
+        // Optional parameters
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: false,
+        breakpoints: {
+            0: {
+                spaceBetween: 20,
+                slidesPerView: 1
+            },
+            640: {
+                spaceBetween: 30,
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            }
+        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.services_business_navigate__next',
+          prevEl: '.services_business_navigate__prev',
         },
     });
 }
@@ -233,22 +260,6 @@ if ($('.case_main-wrapper__body')) {
         navigation: {
           nextEl: '.case_main_navigate__next',
           prevEl: '.case_main_navigate__prev',
-        },
-    });
-}
-
-if ($('.first_slide__swiper')) {
-    const first_slide__swiper = new Swiper('.first_slide__swiper', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        autoplay: {
-            delay: 6000,
-        },
-        // Navigation arrows
-        navigation: {
-          nextEl: '.first_slide__swiper_navigate__next',
-          prevEl: '.first_slide__swiper_navigate__prev',
         },
     });
 }

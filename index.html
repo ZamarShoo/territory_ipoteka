@@ -25,7 +25,7 @@
 </head>
 <body>
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="">
             <img src="./assets/images/preloader.svg" alt="">
             <div class="loader">
@@ -34,7 +34,7 @@
                 <div class="dot dot-3"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="header">
         <section>
@@ -129,8 +129,53 @@
             </div>
             <section class="navigate_fist_slide__wrapper">
                 <div class="navigate navigate_first_slide__swiper">
-                    <i class="first_slide__swiper_navigate__prev"></i>
-                    <i class="first_slide__swiper_navigate__next"></i>
+                    <i class="first_slide__swiper_navigate__prev">
+                        <object data="" type="">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="50"
+                            height="50"
+                            version="1.1">
+                                <circle 
+                                cx="25" 
+                                cy="25" r="24"
+                                fill="transparent"
+                                stroke="#F7FCFC" 
+                                stroke-opacity="0.6" 
+                                stroke-width="2"
+                                stroke-dasharray="0 0"/>
+                            </svg>
+                        </object>
+                    </i>
+                    <i class="first_slide__swiper_navigate__next">
+                        <object data="" type="">
+                            <svg
+                            xmlns="http://www.w3.org/2000/svg" 
+                            width="50"
+                            height="50"
+                            version="1.1">
+                                <circle 
+                                    cx="25" 
+                                    cy="25" r="24"
+                                    fill="transparent"
+                                    stroke="#F7FCFC" 
+                                    stroke-opacity="0.6" 
+                                    stroke-width="2"
+                                    stroke-dasharray="0 0"
+                                />
+                                <circle 
+                                    class="line-drawing"
+                                    cx="25" 
+                                    cy="25" r="24"
+                                    fill="transparent"
+                                    stroke="#E3AC75" 
+                                    stroke-opacity="1" 
+                                    stroke-width="2"
+                                    stroke-dasharray="0 0"
+                                />
+                            </svg>
+                        </object>
+                    </i>
                 </div>
             </section>
         </div>   
@@ -1968,14 +2013,14 @@
         </div>
     </div>
 
-    <div class="fixed-left"></div>
+    <!-- <div class="fixed-left"></div>
     <div class="fixed-right">
         <a class="bubble"></a>
         <a class="phone"></a>
         <a class="mail"></a>
-    </div>
+    </div> -->
 
-    <section class="fixed-up">
+    <!-- <section class="fixed-up">
         <div class="cookie cookie1">
             <p>Мы используем <a href="">cookie-файлы</a>, чтобы улучшить сайт для вас</p>
             <a href="" class="btn btn_cookie">Хорошо</a>
@@ -1992,7 +2037,7 @@
             </div>
             <a href="" class="btn btn_cookie">Хорошо</a>
         </div>
-    </section>
+    </section> -->
 
     <div style="display: none;" id="service_popup_0" class="service_popup__wrapper">
         <div class="service_popup__outer">
@@ -2122,6 +2167,7 @@
     <script src="./assets/lib/scripts/fm.revealator.jquery.js"></script>
     <script type="text/javascript">
         Revealator.effects_padding = '-250';
+        new SimpleBar(document.getElementById('online_translator__inner'));
     </script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./assets/lib/scripts/anime.min.js"></script>

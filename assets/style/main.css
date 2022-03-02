@@ -3827,15 +3827,28 @@ footer .modal .close_popup {
   display: none;
 }
 
+.navigate_services_business_mobile {
+  display: none;
+  margin-top: 40px;
+}
+
+.navigate_services_business_desktop i, .navigate_services_business_mobile i {
+  display: inline-block;
+}
+
+.services_business__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .services_business {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 40px;
-  grid-column-gap: 30px;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
   row-gap: 40px;
   margin-top: 70px;
 }
@@ -3844,11 +3857,11 @@ footer .modal .close_popup {
   height: 460px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 20px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 20px rgba(0, 0, 0, 0.25);
-  background-image: url(../images/delete/service_business.png);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
+  margin-bottom: 15px;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -3934,11 +3947,6 @@ footer .modal .close_popup {
   width: 30px;
   height: 30px;
   background-size: 30px;
-}
-
-.services_business li:hover {
-  -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
 }
 
 .services_business li:hover h3 {
@@ -4618,13 +4626,6 @@ ul.schema li:last-child > div i:nth-child(2) {
     bottom: 30px;
     left: 20px;
   }
-  .services_business {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    -webkit-column-gap: 20px;
-            column-gap: 20px;
-  }
   .services_business li {
     height: 360px;
   }
@@ -4749,6 +4750,14 @@ ul.schema li:last-child > div i:nth-child(2) {
             justify-content: center;
     margin-top: 50px;
   }
+  .navigate_services_business_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigate_services_business_desktop {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -4839,10 +4848,6 @@ ul.schema li:last-child > div i:nth-child(2) {
   .utp_business {
     margin: 60px 0 60px !important;
     width: 100%;
-  }
-  .services_business {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
   }
   .utp_second_business_ul li {
     width: auto;
@@ -6481,8 +6486,23 @@ h2.likeH {
   z-index: 10;
 }
 
+.navigate_first_slide__swiper object {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .navigate_first_slide__swiper i {
   border-color: #FFFFFF;
+  border: none !important;
+  position: relative;
+}
+
+.navigate_first_slide__swiper i:hover {
+  background-color: transparent !important;
+  border-color: transparent;
 }
 
 .navigate_first_slide__swiper i::before {
@@ -6491,10 +6511,6 @@ h2.likeH {
 
 .navigate_first_slide__swiper i::after {
   opacity: 1 !important;
-}
-
-.navigate_first_slide__swiper i:hover {
-  border-color: #E3AC75;
 }
 
 .faq_body {
@@ -6567,6 +6583,130 @@ h2.likeH {
 .kase_main_navigate__mobile {
   display: none;
   margin-top: 40px;
+}
+
+.service_business__popup_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 100;
+}
+
+.service_business__info {
+  position: relative;
+  z-index: 2;
+}
+
+.service_business__popup_outer::-webkit-scrollbar {
+  width: 0;
+}
+
+.service_business__popup_outer {
+  width: 680px;
+  height: 709px;
+  background: #112228;
+  position: relative;
+  padding: 85px 80px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.service_business__popup_outer a.btn {
+  margin-top: 20px;
+}
+
+.service_business__popup_outer i {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  background-image: url(../images/close_white.svg);
+  cursor: pointer;
+  z-index: 3;
+}
+
+.service_business__popup_outer h3 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 140%;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.service_business__popup_outer p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.service_business__images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.service_business__images .bg_dark {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(25%, #112228), to(rgba(17, 34, 40, 0.2)));
+  background: linear-gradient(360deg, #112228 25%, rgba(17, 34, 40, 0.2) 100%);
+  z-index: 1;
+  position: absolute;
+}
+
+.page404 h1 {
+  margin-bottom: 0 !important;
+}
+
+.page404 p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  margin: 20px 0 50px;
+  max-width: 630px;
+  color: #FFFFFF;
+}
+
+.page404 .dark-slide_green {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #1C4342;
+  opacity: 0.6;
+}
+
+.page404 .dark-slide_black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000000;
+  opacity: 0.2;
 }
 
 @media screen and (max-width: 1400px) {
@@ -6770,6 +6910,11 @@ h2.likeH {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .service_business__popup_outer {
+    width: 620px;
+    height: 762px;
+    padding: 90px 60px;
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -6938,6 +7083,21 @@ h2.likeH {
     width: 30px;
     height: 30px;
     background-size: 30px;
+  }
+  .service_business__popup_outer {
+    width: 100%;
+    height: 100%;
+    padding: 80px 30px;
+  }
+  .service_business__popup_outer h3 {
+    font-size: 24px;
+  }
+  .page404 p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+  }
+  .page404 h1 {
+    font-size: 46px;
   }
 }
 

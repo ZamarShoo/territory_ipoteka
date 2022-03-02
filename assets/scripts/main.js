@@ -1,7 +1,5 @@
 const select1 = new CustomSelect('.input_changer__mobile');
 
-new SimpleBar(document.getElementById('online_translator__inner'));
-
 $('#kviz a.btn').click(function(e) {
     e.preventDefault()
     let index = Number($(this).attr("data-index"))
